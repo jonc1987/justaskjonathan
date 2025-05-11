@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Help | Just Ask Jonathan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #006d77;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #d1f2f2;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #006d77;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #006d77;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #009ca6;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #007b83;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>Just Ask Jonathan</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule Help</a>
+    <a href="guides.html">Tech Guides</a>
+    <a href="donate.html">Donate</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="container">
+    <h2>Schedule a Free Tech Help Session</h2>
+    <form action="https://usebasin.com/f/16a3a5388c50" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">What do you need help with?</label>
+      <textarea id="message" name="message" rows="6" placeholder="Briefly describe your tech issue..." required></textarea>
+
+      <button type="submit">Request Help</button>
+      <p class="note">You'll get a confirmation by email once your request is received.</p>
+    </form>
+  </div>
+</body>
+</html>

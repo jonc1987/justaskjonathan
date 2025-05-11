@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Guides | Just Ask Jonathan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8f8;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: #006d77;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+    nav {
+      background-color: #d1f2f2;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #006d77;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #006d77;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    li a {
+      color: #009ca6;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    li a:hover {
+      text-decoration: underline;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label, textarea, input, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    textarea, input {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background-color: #009ca6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007b83;
+    }
+  </style>
+</head>
+<body>
+  <header>Just Ask Jonathan</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule Help</a>
+    <a href="guides.html">Tech Guides</a>
+    <a href="donate.html">Donate</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="container">
+    <h2>Helpful Tech Guides</h2>
+    <ul>
+      <li><a href="#">📹 How to Use Zoom</a></li>
+      <li><a href="#">📧 How to Set Up an Email Account</a></li>
+      <li><a href="#">📱 How to Use a Smartphone</a></li>
+      <li><a href="#">💬 How to Use WhatsApp or iMessage</a></li>
+      <li><a href="#">🌐 Browsing the Web Safely</a></li>
+      <li><a href="#">🛒 How to Shop Online</a></li>
+    </ul>
+
+    <h3 style="margin-top:40px; color:#006d77;">Request a New Guide</h3>
+    <form action="https://usebasin.com/f/2c55f1534d88" method="POST">
+      <label for="guide-request">Is there something you'd like help learning?</label>
+      <textarea id="guide-request" name="guide-request" rows="5" placeholder="Type your guide request here..." required></textarea>
+      <input type="hidden" name="form-type" value="Guide Request">
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+</body>
+</html>
